@@ -1,0 +1,9 @@
+<h1>메인 페이지</h1>
+<a href="{% url 'articles:create' %}">[CREATE]</a>
+<ul>
+  {% for article in articles %}
+    <li>
+      <a>{{ article.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
